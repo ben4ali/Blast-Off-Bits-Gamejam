@@ -183,7 +183,7 @@ export const AlienShooter = () => {
             className="alien-shooter-holder"
             onMouseMove={handleMouseMove}
         >
-            <h3>ALIEN INVASION</h3>
+            <h3>% ALIEN INVASION ®</h3>
             <div className="screen screen-alien">
                 <div className="ship" ref={shipRef}></div>
                 <div className="scoreboard">

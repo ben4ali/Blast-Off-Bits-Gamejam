@@ -102,7 +102,7 @@ export const PlanningComponent = () => {
 
     return (
         <div className="planning-container">
-            <div className="planning-title">PLANNING</div>
+            <div className="planning-title">¹ PLANNING ¹</div>
             <div className="planning-content">
                 <div ref={particleContainerRef} className="particle-container"></div>
                 <div ref={shipRef} className="space-ship"></div>

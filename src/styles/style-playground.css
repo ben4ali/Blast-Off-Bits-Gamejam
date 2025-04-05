@@ -37,7 +37,7 @@
 
 .alien-shooter-holder h3{
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 100;
     color: rgb(165, 249, 56);
     margin-bottom: 20px;
     animation: flicker 1s linear infinite;
