@@ -5,6 +5,7 @@ import { HeroComponent } from "../components/HeroComponent";
 import { NavbarComponent } from "../components/NavbarComponent";
 import { ThemeComponent } from "../components/ThemeComponent";
 import { PlanningComponent } from "../components/PlanningComponent";
+import { PlaygroundComponent } from "../components/PlaygroundComponent";
 
 const Index = () => {
   const mainRef = useRef<HTMLDivElement>(null);
@@ -70,20 +71,31 @@ const Index = () => {
       <div className="arcade-scanner"></div>
       <div className="arcade-scanner-2"></div>
 
+      {/* NAVBAR */}
       <NavbarComponent />
 
       <div className="spacer"></div>
 
+      {/* --------------------- SECTIONS -----------------------------*/}
+      
+      {/* ** HERO SECTION ** */}
       <section id="hero-section">
         <HeroComponent />
       </section>
 
+      {/* ** THEME SECTION ** */}
       <section id="theme-section">
         <ThemeComponent />
       </section>
 
+      {/* ** PLANNING SECTION ** */}
       <section id="planning-section">
         <PlanningComponent />
+      </section>
+
+      {/* ** PLAYGROUND SECTION ** */}
+      <section id="playground-section">
+        <PlaygroundComponent />
       </section>
     </div>
   );

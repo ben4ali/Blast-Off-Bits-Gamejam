@@ -1,0 +1,100 @@
+.playground-container{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playground-container h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgb(249, 201, 56);
+    margin-bottom: 20px;
+    animation: flicker 1s linear infinite;
+}
+
+.playground-content{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alien-shooter-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.alien-shooter-holder {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.alien-shooter-holder h3{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(165, 249, 56);
+    margin-bottom: 20px;
+    animation: flicker 1s linear infinite;
+}
+
+.screen-alien {
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.ship {
+    position: absolute;
+    bottom: 10%;
+    z-index: 100;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    transform: translateX(-50%);
+    background: no-repeat center/contain;
+
+}
+
+.alien {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 85px;
+    height: 85px;
+    background: no-repeat center/contain;
+
+}
+
+.bullet {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background: rgb(255, 108, 108);
+    box-shadow: 0 0 10px 5px rgba(250, 17, 17, 0.2);
+}
+
+
+.scoreboard{
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    color: rgb(16, 255, 136);
+    font-size: 20px;
+    z-index: 1000;
+    text-align: left;
+    animation: flicker 1s linear infinite;
+}
+
+
+.controller-help{
+    position: absolute;
+    bottom: 2%;
+
+}
