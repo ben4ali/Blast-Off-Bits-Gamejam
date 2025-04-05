@@ -117,6 +117,15 @@ export const PlanningComponent = () => {
                     <DayComponent key={index} index={index} day={day} />
                 ))}
             </div>
+            <div className="planning-footer">
+                <p>
+                ALL TIMES ARE IN EASTERN DAYLIGHT TIME (EDT). <br></br>
+                SCHEDULE IS SUBJECT TO CHANGE.
+                </p>
+                <button className="calendar-btn">
+                    ADD TO CALENDAR
+                </button>
+            </div>
         </div>
     );
 };
