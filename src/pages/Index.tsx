@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import { HeroComponent } from "../components/HeroComponent";
 import { NavbarComponent } from "../components/NavbarComponent";
 import { ThemeComponent } from "../components/ThemeComponent";
+import { PlanningComponent } from "../components/PlanningComponent";
 
 const Index = () => {
   const mainRef = useRef<HTMLDivElement>(null);
@@ -70,13 +71,20 @@ const Index = () => {
       <div className="arcade-scanner-2"></div>
 
       <NavbarComponent />
+
       <div className="spacer"></div>
+
       <section id="hero-section">
         <HeroComponent />
       </section>
+
       <section id="theme-section">
         <ThemeComponent />
-    </section>
+      </section>
+
+      <section id="planning-section">
+        <PlanningComponent />
+      </section>
     </div>
   );
 };

@@ -1,0 +1,238 @@
+.planning-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 70%;
+  margin-top: 5rem;
+}
+
+.planning-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: royalblue;
+    margin-bottom: 20px;
+}
+
+.planning-content{
+    width: 90%;
+    position: relative;
+    margin-top: 8rem;
+    height: 280vh;
+}
+
+.space-ship{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.8rem;
+    height: 0.8rem;
+    rotate: 45deg;
+    background-color: rgb(95, 121, 191);
+    z-index: 10;
+    box-shadow: 0 0 25px 15px rgb(95, 121, 191);
+    background-size: cover;
+    background-position: center;
+    animation: glowing-star-fire 1s linear infinite;
+}
+
+.particle-container {
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.comet-particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+   
+    pointer-events: none;
+    z-index: 5;
+    animation: move-up 5s linear infinite;
+}
+
+.planet-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top:0;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.planet {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+    animation: levitate 2s ease-in-out infinite;
+    overflow: auto;
+}
+.planet img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 25px 15px rgb(95, 121, 191);
+    animation: glowing-star-fire 1s linear infinite;
+}
+
+.planet:nth-child(1) {
+    opacity: 0.9;
+    height: 20rem;
+    width: 20rem;
+    top: 10%;
+    left: -25%;
+    animation-delay: 0s;
+}
+.planet:nth-child(2) {
+    opacity: 0.8;
+    height: 35rem;
+    width: 35rem;
+    top: 28%;
+    left: 85%;
+    animation-delay: 1s;
+}
+.planet:nth-child(3) {
+    opacity: 0.7;
+    height: 25rem;
+    width: 25rem;
+    top: 55%;
+    left: -25%;
+    animation-delay: 2s;
+}
+.planet:nth-child(4) {
+    opacity: 0.8;
+    height: 20rem;
+    width: 20rem;
+    top:  85%;
+    left: 85%;
+    animation-delay: 3s;
+}
+
+
+
+
+.day{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    width: fit-content;
+    border-radius: 3px;
+    padding-inline: 3rem;
+    box-shadow: 0 0 15px 5px rgba(95, 121, 191, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    animation: flicker 1s linear infinite;
+    background: linear-gradient(to right, rgba(33, 34, 75, 0.5), rgba(0, 0, 0, 0));
+}
+
+.day-title{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.day-title h3{
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+    margin: 0;
+}
+.day-title p{
+    font-size: 1.5rem;
+    color: rgb(162, 253, 181);
+    padding: 1rem;
+    margin: 0;
+}
+
+.day-content-text{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: rgb(255, 154, 136);
+}
+
+.day-content-text span{
+    font-size: 1.5rem;
+    color: rgb(255, 226, 120);
+    padding: 1rem;
+    margin: 0;
+}
+
+.day:nth-child(even){
+    right: -10%;
+    background: linear-gradient(to left, rgb(33, 34, 75,0.5), rgba(0, 0, 0, 0)) !important;
+}
+
+.day:nth-child(odd) {
+    left: -10%;
+}
+
+@keyframes move-up {
+    0% {
+        transform: translateY(0) rotateZ(0deg);
+        background-color: rgb(179, 214, 255);
+    }
+    50% {
+        transform: translateY(-50vh) rotateZ(180deg);
+        background-color: rgb(255, 255, 255);
+    }
+    100% {
+        transform: translateY(-100vh) rotateZ(360deg);
+        background-color: rgb(255, 255, 255);
+
+    }
+}
+
+@keyframes glowing-star-fire {
+    0% {
+        transform: scale(1) rotate(0deg);
+        box-shadow: 0 0 15px 10px rgb(95, 121, 191);
+        border: 2px solid rgba(255, 255, 255, 0);
+        background-color: rgb(95, 121, 191);
+        border-radius: 20%;
+    }
+    25% {
+        background-color: rgb(135, 171, 221);
+        border-radius: 30%;
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+        box-shadow: 0 0 30px 20px rgb(95, 121, 191);
+        border: 2px solid rgb(199, 242, 247);
+        background-color: rgb(179, 214, 255);
+        border-radius: 20%;
+    }
+    75% {
+        background-color: rgb(135, 171, 221);
+        border-radius: 10%;
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        box-shadow: 0 0 15px 10px rgb(95, 121, 191);
+        border: 2px solid rgba(255, 255, 255, 0);
+        background-color: rgb(95, 121, 191);
+        border-radius: 5%;
+    }
+}
+
+
+@keyframes levitate {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
