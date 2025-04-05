@@ -12,24 +12,24 @@ Welcome to **Blast Off Bits**, a fictive pixel space retro gamejam project! This
 
 ```sql
 
-                    00XXXX                        XXXX00        
-                    00XXxx                        xxXX00        
-                    ee0000eeeeRR            RReeee0000ee        
-                          xxXX00            00XXxx              
-                          XXXX00            00XXXX              
-                    eexxXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxee        
+                    00XXXX                        0XXX00        
+                    00XXxx                        0xXX00        
+                    0e0000eeeeRR            0Reeee0000ee        
+                          0xXX00            00XXxx              
+                          0XXX00            00XXXX              
+                    0exxXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxee        
                     00XXXXeeee00XXXXXXXXXXXX00eeeeXXXX00        
-                xxXXXXXXXX    00XXXXXXXXXXXX00    XXXXXXXXxx    
-                XXXXXXXXXX    00XXXXXXXXXXXX00    XXXXXXXXXX    
-            eeeeXXXXXXXXXXeeeeRRXXXXXXXXXXXXRReeeeXXXXXXXXXXeeee
-            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-            XXXX""""RRXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXRR""""XXXX
-            XXXX    00XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX00    XXXX
-            XXXX    00XXXX""""""""""""""""""""""""XXXX00    XXXX
-            XXRR    00XXXX                        XXXX00    RRXX
-            eeXX    00xxxxRR000000ee    ee000000RRxxxx00    XXee
-                          xxXXXXXXxx    xxXXXXXXxx                            
-                          XXXXXXXXXX    XXXXXXXXXX              
+                0xXXXXXXXX    00XXXXXXXXXXXX00    0XXXXXXXxx    
+                0XXXXXXXXX    00XXXXXXXXXXXX00    0XXXXXXXXX    
+            0eeeXXXXXXXXXXeeeeRRXXXXXXXXXXXXRReeeeXXXXXXXXXXeeee
+            0XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            0XXX""""RRXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXRR""""0XXX
+            0XXX    00XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX00    0XXX
+            0XXX    00XXXX""""""""""""""""""""""""0XXX00    0XXX
+            0XRR    00XXXX                        0XXX00    0RXX
+            0eXX    00xxxxRR000000ee    0RRRRRRRXXXX00    0XXX
+                          0xXXXXXXxx    0xxXXXXXXxx                            
+                          0XXXXXXXXX    0XXXXXXXXX              
  
 
 ```
