@@ -141,7 +141,7 @@
     color: rgb(184, 240, 86);
     margin: 0;
     text-shadow: 0 0 5px hsl(240, 33%, 1%);
-    width: 50% !important;
+    width: 70% !important;
 }
 
 .countdown-timer {
@@ -187,15 +187,15 @@
 
 @keyframes bounce {
     0% {
-        transform: translateY(0);
+        transform: translateY(0) translateX(-50%);;
     }
 
     50% {
-        transform: translateY(-1rem);
+        transform: translateY(-1rem) translateX(-50%);;
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateY(0) translateX(-50%);;
     }
 }
 

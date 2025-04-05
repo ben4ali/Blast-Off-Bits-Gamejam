@@ -3,6 +3,7 @@ import "../styles/style-background.css";
 import { gsap } from "gsap";
 import { HeroComponent } from "../components/HeroComponent";
 import { NavbarComponent } from "../components/NavbarComponent";
+import { ThemeComponent } from "../components/ThemeComponent";
 
 const Index = () => {
   const mainRef = useRef<HTMLDivElement>(null);
@@ -73,6 +74,9 @@ const Index = () => {
       <section id="hero-section">
         <HeroComponent />
       </section>
+      <section id="theme-section">
+        <ThemeComponent />
+    </section>
     </div>
   );
 };
