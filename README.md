@@ -58,6 +58,11 @@ This project was created as an opportunity to enhance my skills in React and Typ
 4. Open your browser and navigate to `http://localhost:5713` to view the project.
 
 
-  ## License
+## Credits
 
-  This project is licensed under the MIT License. See the `LICENSE` file for details.
+- **Pixel Font Credits**: The pixel fonts used in this project are credited in the [Font Credits](public/fonts/font-credits.md) file.
+
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
