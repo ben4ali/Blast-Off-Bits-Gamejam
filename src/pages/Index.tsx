@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import "../styles/style-background.css";
 import { gsap } from "gsap";
+import { HeroComponent } from "../components/HeroComponent";
+import { NavbarComponent } from "../components/NavbarComponent";
 
 const Index = () => {
   const mainRef = useRef<HTMLDivElement>(null);
@@ -66,6 +68,11 @@ const Index = () => {
       <div className="arcade-scanner"></div>
       <div className="arcade-scanner-2"></div>
 
+      <NavbarComponent />
+      <div className="spacer"></div>
+      <section id="hero-section">
+        <HeroComponent />
+      </section>
     </div>
   );
 };
