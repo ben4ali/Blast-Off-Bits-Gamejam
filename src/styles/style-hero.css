@@ -1,7 +1,7 @@
 #hero-section {
     position: relative;
     z-index: 15;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     align-items: center;
 }
@@ -11,6 +11,7 @@
     justify-content: start;
     margin: 0 auto;
     width: 80%;
+    height: 80vh;
     color: var(--foreground);
 }
 
@@ -36,23 +37,26 @@
     text-align: left;
     margin: 0;
 }
-.info-container h2{
+
+.info-container h2 {
     margin: 0;
     font-size: 2rem;
     text-shadow: 0 0 16px 2px rgba(144, 238, 144, 0.8);
     color: var(--accent);
 
 }
-.info-container h3{
+
+.info-container h3 {
     margin: 0;
     font-size: 1.25rem;
-    color:rgb(236, 231, 64);
+    color: rgb(236, 231, 64);
     margin-top: 0.5rem;
 }
-.info-header{
+
+.info-header {
     display: flex;
     flex-direction: column;
-    gap:0;
+    gap: 0;
 }
 
 .info-container p {
@@ -67,9 +71,9 @@
 
 }
 
-.btn-container{
-    
-    border-top: 2px solid rgb(127, 236, 64,0.5);
+.btn-container {
+
+    border-top: 2px solid rgb(127, 236, 64, 0.5);
     width: 90%;
     display: flex;
     justify-content: start;
@@ -77,7 +81,8 @@
     margin-top: 2rem;
     padding-top: 1rem;
 }
-.btn-pixel{
+
+.btn-pixel {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +92,7 @@
     transition: all 0.15s ease-in-out;
 }
 
-.signup{
+.signup {
     color: rgb(100, 82, 24);
     background-color: rgb(244, 202, 64);
     border: 4px solid rgb(105, 91, 27);
@@ -95,7 +100,7 @@
     animation: glowOrange 1s infinite alternate, flicker 5s infinite;
 }
 
-.explore{
+.explore {
     color: rgb(24, 42, 100);
     background-color: rgb(64, 97, 244);
     border: 4px solid rgb(27, 34, 105);
@@ -103,12 +108,12 @@
     animation: glowBlue 1s infinite alternate, flicker 5s infinite;
 }
 
-.btn-pixel:hover{
-    filter : brightness(1.5);
+.btn-pixel:hover {
+    filter: brightness(1.5);
     transform: translateY(-0.2rem);
 }
 
-.screen-countdown{
+.screen-countdown {
     display: flex;
     justify-content: center !important;
     align-items: center;
@@ -119,9 +124,9 @@
     padding-inline: 2rem;
     text-shadow: 0 0 5px hsl(240, 33%, 1%);
     margin-top: 3rem;
-  }
-  
-  .countdown-container{
+}
+
+.countdown-container {
     display: flex;
     flex-direction: flex;
     align-items: center;
@@ -129,26 +134,27 @@
     height: 100%;
     width: 100%;
     gap: 1rem;
-  }
-  
-  .countdown-container h3{
+}
+
+.countdown-container h3 {
     font-size: 1.5rem;
     color: rgb(184, 240, 86);
     margin: 0;
     text-shadow: 0 0 5px hsl(240, 33%, 1%);
     width: 50% !important;
-  }
-  
-  .countdown-timer{
+}
+
+.countdown-timer {
     display: flex;
     justify-content: end;
     align-items: center;
     height: fit-content;
     width: 90%;
     gap: 1rem;
-  
-  }
-  .countdown-timer p{
+
+}
+
+.countdown-timer p {
     display: flex;
     flex-direction: column;
     font-size: 15px !important;
@@ -157,15 +163,42 @@
     animation: none !important;
     opacity: 1 !important;
     color: rgb(184, 240, 86);
-    background-color: rgb(0,0,0,0.2);
+    background-color: rgb(0, 0, 0, 0.2);
     padding: 0.5rem 1rem;
-  
-  }
-  
-  .time{
+
+}
+
+.time {
     color: rgb(254, 246, 88);
     animation: flicker 1s infinite;
-  }
+}
+
+.scroll-down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 1s infinite;
+
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 
 @keyframes glowOrange {
@@ -194,7 +227,7 @@
     100% {
         box-shadow: 0 0 5px 1px rgba(64, 97, 244, 0.4), 0 0 20px 8px rgba(64, 97, 244, 0.2);
     }
-    
+
 }
 
 @keyframes flicker {

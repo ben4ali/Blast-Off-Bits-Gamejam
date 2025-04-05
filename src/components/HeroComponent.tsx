@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "../styles/style-hero.css";
 import { Countdown } from "./hero/Countdown";
+import { ArrowDown } from "lucide-react";
 
 export const HeroComponent = () => {
     const [eventDate] = useState(() => {
@@ -41,6 +42,10 @@ export const HeroComponent = () => {
             </div>
           
             <div className="screen"></div>
+            <div className="scroll-down">
+                <p>SCROLL</p>
+                <ArrowDown className="arrow-down" size={24} color="var(--accent)" />
+            </div>
         </div>
  
     )
