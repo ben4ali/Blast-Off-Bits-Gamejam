@@ -1,0 +1,122 @@
+.index-container {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-lines {
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    image-rendering: pixelated;
+    background-image: var(--tv-background-lines);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: auto;
+}
+
+.space-gradient {
+    height: 500vh;
+    background: linear-gradient(to bottom, var(--pixel-dark), var(--pixel-purple), var(--pixel-blue));
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.star {
+    width: 0.25rem;
+    height: 0.25rem;
+    background-color: white;
+    position: absolute;
+    animation: twinkle 2s infinite;
+    box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.4);
+}
+
+.shooting-star {
+    position: fixed;
+    width: 0.25rem;
+    height: 0.25rem;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.4), 0 0 20px 8px rgba(255, 255, 255, 0.2);
+}
+
+.arcade-scanner,
+.arcade-scanner-2 {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgba(92, 219, 116, 0.3);
+    box-shadow: 0 0 10px 5px rgba(92, 219, 116, 0.3);
+    animation: scan 8s linear infinite;
+}
+
+.arcade-scanner-2 {
+    height: 1px;
+    animation: scan-2 7s linear infinite;
+    box-shadow: 0 0 5px 2px rgba(92, 219, 116, 0.3);
+}
+
+.grid-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 40px 40px;
+    opacity: 0.5;
+    background-image: linear-gradient(to right, rgba(92, 219, 116, .05) 1px, transparent 1px), linear-gradient(to bottom, rgba(92, 219, 116, .05) 1px, transparent 1px);
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes scan {
+    0% {
+        top: 0;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        top: 100%;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes scan-2 {
+    0% {
+        top: 0;
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+
+    50% {
+        top: 100%;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
