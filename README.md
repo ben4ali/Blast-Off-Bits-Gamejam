@@ -2,6 +2,14 @@
 
 Welcome to **Blast Off Bits**, a fictive pixel space retro gamejam project! This project is a creative showcase of a 48-hour gamejam event, built with a unique retro pixel art style
 
+## Preview
+
+![Hero Preview](previews/hero.png)
+
+![Voting Preview](previews/vote.png)
+
+![Planning Preview](previews/planning.gif)
+
 ```sql
 
                     00XXXX                        XXXX00        
