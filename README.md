@@ -1,54 +1,63 @@
-# React + TypeScript + Vite
+# Blast Off Bits - A Fictive Pixel Space Retro Gamejam
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Blast Off Bits**, a fictive pixel space retro gamejam project! This project is a creative showcase of a 48-hour gamejam event, built with a unique retro pixel art style
 
-Currently, two official plugins are available:
+```sql
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+                    00XXXX                        XXXX00        
+                    00XXxx                        xxXX00        
+                    ee0000eeeeRR            RReeee0000ee        
+                          xxXX00            00XXxx              
+                          XXXX00            00XXXX              
+                    eexxXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxee        
+                    00XXXXeeee00XXXXXXXXXXXX00eeeeXXXX00        
+                xxXXXXXXXX    00XXXXXXXXXXXX00    XXXXXXXXxx    
+                XXXXXXXXXX    00XXXXXXXXXXXX00    XXXXXXXXXX    
+            eeeeXXXXXXXXXXeeeeRRXXXXXXXXXXXXRReeeeXXXXXXXXXXeeee
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            XXXX""""RRXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXRR""""XXXX
+            XXXX    00XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX00    XXXX
+            XXXX    00XXXX""""""""""""""""""""""""XXXX00    XXXX
+            XXRR    00XXXX                        XXXX00    RRXX
+            eeXX    00xxxxRR000000ee    ee000000RRxxxx00    XXee
+                          xxXXXXXXxx    xxXXXXXXxx                            
+                          XXXXXXXXXX    XXXXXXXXXX              
+ 
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This project was created as an opportunity to enhance my skills in React and TypeScript
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
+## Technologies Used
+
+- **React**: For building the user interface.
+- **TypeScript**: To ensure type safety and maintainable code.
+- **GSAP**: For smooth animations and scroll-triggered effects.
+- **Three.js**: To add 3D elements and enhance the retro aesthetic.
+
+## How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ben4ali/Pixel-GameJam.git
+   cd pixel-gamejam
+   ```
+
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Start the development server:
+    ```bash
+    npm start
+    ```
+
+4. Open your browser and navigate to `http://localhost:5713` to view the project.
+
+
+  ## License
+
+  This project is licensed under the MIT License. See the `LICENSE` file for details.
