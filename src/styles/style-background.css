@@ -100,7 +100,17 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom, rgba(20, 8, 54, 0.5), rgba(41, 111, 123, 0.073));
+}
+
+#event-details-section{
+    padding-bottom: 10%;
+    min-height: 80vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to top, rgba(32, 22, 100, 0.5), rgba(41, 111, 123, 0.073));
 }
 
 #footer-section{

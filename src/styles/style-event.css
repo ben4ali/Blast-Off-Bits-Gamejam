@@ -1,0 +1,162 @@
+.event-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    position: relative;
+    z-index: 5;
+}
+
+.event-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.event-details-content,
+.event-rules-content {
+    width: 50%;
+}
+
+.event-details-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-details-content h4 {
+    font-size: 1.9rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    font-weight: 200;
+}
+
+
+.event-description {
+    font-size: 1.1rem;
+    color: rgb(224, 255, 210);
+    margin-bottom: 1rem;
+    font-weight: 100;
+}
+
+.info-card-holder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-card {
+    display: flex;
+    align-items: start;
+    padding-inline: 2rem;
+    height: 10rem;
+    width: 18rem;
+}
+
+.info-card h5 {
+    font-size: 1.5rem;
+    color: rgb(255, 232, 82);
+    font-weight: 200;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.info-card p {
+    margin: 0;
+    font-size: 1.2rem;
+
+}
+
+.cube-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:46rem !important;
+    height: 12rem !important;
+    margin-top: 2rem;
+    position: relative !important;
+    transform: translateX(-5%);
+
+}
+.cube-holder canvas{
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 1 !important;
+}
+
+.event-rules-content {
+    display: flex;
+    flex-direction: column;
+    scale: 0.8;
+
+}
+
+.event-rules-content h4 {
+    font-size: 1.9rem;
+    color: rgb(236, 41, 41);
+    margin-bottom: 1rem;
+    font-weight: 200;
+}
+
+.jam-rules {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.jam-rule {
+    width: 100%;
+    background-color: #0000004d;
+    padding: 1.25rem;
+    border: 6px solid;
+}
+
+.jam-rule h5 {
+    font-size: 1.35rem;
+    font-weight: 200;
+    margin: 0;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+.jam-rule p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 100;
+    color: rgb(224, 255, 210);
+}
+
+.jam-rule:nth-child(1) {
+    border-color: rgb(255, 82, 82);
+    color: rgb(255, 82, 82);
+}
+
+.jam-rule:nth-child(2) {
+    border-color: rgb(236, 213, 41);
+    color: rgb(236, 213, 41);
+}
+
+.jam-rule:nth-child(3) {
+    border-color: rgb(255, 82, 218);
+    color: rgb(255, 82, 218);
+}
+
+.jam-rule:nth-child(4) {
+    border-color: rgb(82, 82, 255);
+    color: rgb(82, 82, 255);
+}
+
+.jam-rule:nth-child(5) {
+    border-color: rgb(41, 236, 70);
+    color: rgb(41, 236, 70);
+}
+
+.jam-rule:nth-child(6) {
+    border-color: rgb(134, 82, 255);
+    color: rgb(134, 82, 255);
+}

@@ -7,6 +7,7 @@ import { ThemeComponent } from "../components/ThemeComponent";
 import { PlanningComponent } from "../components/PlanningComponent";
 import { PlaygroundComponent } from "../components/PlaygroundComponent";
 import { FooterComponent } from "../components/FooterComponent";
+import { EventComponent } from "../components/EventComponent";
 
 const Index = () => {
   const mainRef = useRef<HTMLDivElement>(null);
@@ -99,6 +100,12 @@ const Index = () => {
         <PlaygroundComponent />
       </section>
 
+      {/* ** EVENT DETAILS SECTION ** */}
+      <section id="event-details-section">
+        <EventComponent />
+      </section>
+
+      {/* ** FOOTER SECTION ** */}
       <footer id="footer-section">
         <FooterComponent />
       </footer>
