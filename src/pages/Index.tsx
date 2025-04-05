@@ -6,6 +6,7 @@ import { NavbarComponent } from "../components/NavbarComponent";
 import { ThemeComponent } from "../components/ThemeComponent";
 import { PlanningComponent } from "../components/PlanningComponent";
 import { PlaygroundComponent } from "../components/PlaygroundComponent";
+import { FooterComponent } from "../components/FooterComponent";
 
 const Index = () => {
   const mainRef = useRef<HTMLDivElement>(null);
@@ -13,7 +14,7 @@ const Index = () => {
   useEffect(() => {
     if (mainRef.current) {
       const container = mainRef.current;
-      const starCount = 50;
+      const starCount = 100;
 
       const existingStars = container.querySelectorAll(
         ".star:not(.shooting-star)"
@@ -97,6 +98,10 @@ const Index = () => {
       <section id="playground-section">
         <PlaygroundComponent />
       </section>
+
+      <footer id="footer-section">
+        <FooterComponent />
+      </footer>
     </div>
   );
 };
