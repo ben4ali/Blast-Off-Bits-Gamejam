@@ -12,6 +12,8 @@ Welcome to **Blast Off Bits**, a fictive pixel space retro gamejam project! This
 
 ![Invasion Preview](previews/invasion.gif)
 
+![Event details Preview](previews/event-details.png)
+
 ```sql
 
                     00XXXX                        0XXX00        
