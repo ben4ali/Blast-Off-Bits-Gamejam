@@ -53,7 +53,7 @@ This project was created as an opportunity to enhance my skills in React and Typ
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ben4ali/Pixel-GameJam.git
+   git clone https://github.com/ben4ali/Blast-Off-Bits-Gamejam.git
    cd pixel-gamejam
    ```
 
